@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holy Grail Layout - Lab 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Lab 6</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Bubble Sort Tool</h2>
+            <p>Enter numbers separated by commas:</p>
+            <input type="text" id="numbers" placeholder="e.g., 5,2,9,1">
+            <button onclick="sortNumbers()">Sort</button>
+            <p>Sorted Output: <span id="output"></span></p>
+        </main>
+        <aside>
+            <a href="https://www.amazon.com/dp/B09QG4ZLDM" target="_blank">
+                <img src="https://m.media-amazon.com/images/I/71K7QJFMG9L._AC_SL1500_.jpg" alt="SFW Product" style="width:100%">
+            </a>
+        </aside>
+        <footer>
+            <p><strong>Addendum:</strong> This page demonstrates a Holy Grail layout using CSS Grid. The JavaScript section implements a basic bubble sort, allowing users to input numbers, which are then sorted on button click. Challenges included parsing user input correctly and updating the DOM smoothly. Solution involved trimming and converting string input into integers before sorting.</p>
+            <p>Last updated: <span id="lastModified"></span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
