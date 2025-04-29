@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Registration Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="validation.js"></script>
+    <script src="validation.js" defer></script>
 </head>
 <body>
     <h2>Secure Registration Form</h2>
-    <p>This registration form is designed to validate input on the client side using JavaScript and prevent Cross-Site Scripting (XSS) by sanitizing user input.</p>
+    <p>This registration form validates user input and prevents XSS attacks through sanitization.</p>
 
-    <form name="regForm" onsubmit="return validateForm()" method="post" action="#">
+    <form name="regForm" onsubmit="return validateForm(event)">
         <label for="firstName">First Name:</label><br>
         <input type="text" id="firstName" name="firstName"><br><br>
 
