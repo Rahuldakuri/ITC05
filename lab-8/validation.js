@@ -4,7 +4,9 @@ function sanitize(input) {
     return temp.innerHTML;
 }
 
-function validateForm() {
+function validateForm(event) {
+    event.preventDefault();  // Prevents the form from actually submitting
+
     let firstName = sanitize(document.forms["regForm"]["firstName"].value);
     let lastName = sanitize(document.forms["regForm"]["lastName"].value);
     let email = sanitize(document.forms["regForm"]["email"].value);
@@ -27,5 +29,6 @@ function validateForm() {
         return false;
     }
 
+    alert("Form submitted successfully! (Simulated)");
     return true;
 }
