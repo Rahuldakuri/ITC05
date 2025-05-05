@@ -11,6 +11,26 @@
     <h1>Lights Out</h1>
     <div class="grid" id="grid"></div>
 
+    <!-- Addendum Section -->
+    <section style="max-width: 800px; margin-top: 40px; padding: 20px; background-color: #fefefe; border: 1px solid #ccc;">
+        <h2>Addendum</h2>
+        <p>
+            I developed the Lights Out game by combining HTML, CSS, and JavaScript to create a fully functional and visually responsive puzzle. My objective was to meet the assignment criteria while ensuring the game worked exactly like the original: clicking a cell toggles it and its adjacent cells, and the game is won when all lights are turned on.
+        </p>
+        <p>
+            I started by dynamically generating a 5x5 grid using JavaScript, which allowed me to avoid hardcoding each square. I applied CSS Grid to organize the layout and used custom styles to indicate each cell's state—white for “on” and black for “off.” To keep the board solvable, I simulated a series of valid moves using the same logic players would use, ensuring a fair and playable puzzle each time the page loads.
+        </p>
+        <p>
+            One challenge I faced was tracking and toggling adjacent cells without exceeding the grid boundaries. I resolved this by calculating each cell’s row and column index, which let me safely determine neighboring cells. Another hurdle involved checking for a win condition. I wrote a function that verifies whether all cells are white and immediately alerts the player with “You win!” when they solve the puzzle.
+        </p>
+        <p>
+            I used modular JavaScript functions like <code>handleClick()</code>, <code>toggle()</code>, and <code>checkWin()</code> to keep the logic clean and maintainable. I included a real-time “Last updated” timestamp in the footer to meet submission requirements. Additionally, I made design choices that prioritized clarity and ease of use: large buttons, high-contrast visuals, and minimal distractions.
+        </p>
+        <p>
+            Through this project, I strengthened my skills in DOM manipulation, event handling, and interactive layout design. More importantly, I gained insight into how small design and logic decisions can significantly impact usability and game fairness. This project challenged me to balance code structure, functionality, and user experience within strict technical constraints.
+        </p>
+    </section>
+
     <footer>
         <p>Last updated: <span id="lastModified"></span></p>
     </footer>
